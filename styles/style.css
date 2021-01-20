@@ -121,12 +121,14 @@ ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 10px;
+
       
     }
 
   .plants {
-      background-color: wheat;
-      border: solid 1px lightseagreen;
+      background-color: rgb(235, 229, 217);
+      border: solid 1px black;
 
   }
   .add-to-cart {
