@@ -49,15 +49,4 @@ const plants = [
         price: '15',
     },
 
-]
-
-
-
-li class= "plants">
-                <h3 class ="plant-name"> Silver Evergreen </h3>
-                <img class="silver-evergreen"
-                src = "assets/"/>
-                <p class="plant-genus">Aglaonema</p>
-                <p class="plant-price">$60</p>
-                <p class ="plant-size">Medium</p>
-                <p class ="light-needs"> Low Light </p>
+];
