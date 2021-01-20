@@ -9,16 +9,16 @@ test('should take in a plant and return a li', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 
-    `<li class="plants">
-        <h3 class="plant-name"> Silver Evergreen </h3>
-        <img class="silver-evergreen" src="assets/">
-        <p class="plant-genus">Aglaonema</p>
-        <p class="plant-size">Medium</p>
-        <p class="light-needs"> Low Light </p>
-        <p class="plant-price">$60</p>
-        <button class="add-to-cart"> Add to cart</button>
-    </li>`;
-    
+    `<li class="plants">\
+<h3 class="plant-name">Silver Evergreen</h3>\
+<img class="plant-image" src="../assets/silver-evergreen.png">\
+<p class="plant-genus">Aglaonema</p>\
+<p class="plant-size">Medium</p>\
+<p class="light-needs">Low Light</p>\
+<p class="plant-price">$60</p>\
+<button class="add-to-cart">Add to cart</button>\
+</li>`;
+
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = renderPlants(plants[0]);

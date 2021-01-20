@@ -4,9 +4,9 @@ export const plants = [
         image: 'silver-evergreen.png',
         genus: 'Aglaonema', 
         size: 'Medium',
-        light: 'Low light',
+        light: 'Low Light',
         price: '60',
-
+        name: 'Silver Evergreen'
     }, 
     {
         id: 2, 
@@ -15,6 +15,7 @@ export const plants = [
         size: 'Medium',
         light: 'Medium Light',
         price: '25',
+        name: 'Dragon Tree'
     },
     {
         id: 3, 
@@ -23,6 +24,7 @@ export const plants = [
         size: 'Medium',
         light: 'Medium Light',
         price: '40',
+        name: 'Mother-in-laws Tongue'
     },
     {
         id: 4, 
@@ -31,6 +33,7 @@ export const plants = [
         size: 'Large',
         light: 'High Light',
         price: '30',
+        name:  'Peace - Lily'
     },
     {
         id: 5, 
@@ -39,6 +42,7 @@ export const plants = [
         size: 'Medium',
         light: 'Low Light',
         price: '35',
+        name: 'Rubber Tree'
     },
     {
         id: 6, 
@@ -47,6 +51,7 @@ export const plants = [
         size: 'Medium',
         light: 'High Light',
         price: '15',
+        name: 'Aloe Vera'
     },
 
 ];

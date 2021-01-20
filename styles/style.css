@@ -125,3 +125,15 @@ footer {
   .add-to-cart {
       color: limegreen;
   }
+  ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .plant-image {
+      width: 200px;
+      height: 200px;
+  }
+  .plant-genus {
+      font-style: italic;
+  }
