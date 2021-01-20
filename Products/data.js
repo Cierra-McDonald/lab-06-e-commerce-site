@@ -1,3 +1,4 @@
+// This is an array of data that can be updated and changed throughout time 
 export const plants = [
     {
         id: 1, 

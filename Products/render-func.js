@@ -1,9 +1,8 @@
-
-
+// creating the DOM element in JS based on the hard code created in html
 export function renderPlants(plant) {
     const li = document.createElement('li');
     li.classList.add('plants');
-
+// creating a 'blank' space for each of these elements in html
     const h3 = document.createElement('h3');
     const img = document.createElement('img');
     const pGenus = document.createElement('p');
@@ -12,7 +11,7 @@ export function renderPlants(plant) {
     const pPrice = document.createElement('p');
     const addButton = document.createElement('button');
 
-
+//  creating the actual data that will be looped onto the webpage
     h3.classList.add('plant-name');
     h3.textContent = plant.name; 
     li.append(h3);
