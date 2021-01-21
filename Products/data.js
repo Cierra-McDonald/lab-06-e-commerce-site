@@ -1,5 +1,4 @@
 
-import { findById } from '../Cart/utils.js';
 // This is an array of data that can be updated and changed throughout time 
 
 export const plants = [
