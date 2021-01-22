@@ -1,3 +1,5 @@
+import { getCart, setCart, addItemToCart, clearCart } from "../Cart/utils.js";
+
 // creating the DOM element in JS based on the hard code created in html
 export function renderPlants(plant) {
     const li = document.createElement('li');
@@ -38,6 +40,17 @@ export function renderPlants(plant) {
     li.append(pPrice);
 
     addButton.classList.add('add-to-cart');
+    
+    addButton.addEventListener('click', () => {
+        console.log('hello');
+        let locStorage = JSON.parse(localStorage.getItem('cartData'));
+        console.log(locStorage);
+        
+        // let locStorage = getCart();
+        // if (locStorage.length > 0){
+        //     console.log();
+        // }
+    });
     addButton.textContent = 'Add to cart';
     li.append(addButton);
 

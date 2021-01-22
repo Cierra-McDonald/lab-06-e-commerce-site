@@ -1,3 +1,5 @@
+const CART = 'CART';
+const defaultEmptyCart = [];
 
 export function findById(id, array){
     for (let i = 0; i < array.length; i++) {
@@ -38,4 +40,20 @@ export function calcOrderTotal(userCart, plants) {
     }
     
     return total; 
+}
+
+export function getCart() {
+
+}
+
+export function setCart() {
+
+}
+
+export function addItemToCart() {
+
+}
+
+export function clearCart() {
+
 }
