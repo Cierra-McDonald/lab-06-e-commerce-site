@@ -1,5 +1,6 @@
+import { userCart } from '../Cart/cart-data.js';
 import { plants } from '../Products/data.js';
-import { findById } from './utils.js';
+import { findById, calcOrderTotal, calcItemTotal } from './utils.js';
 
 export function renderTableRow(cartItem) {
     const quantity = cartItem.quantity;
@@ -14,7 +15,7 @@ export function renderTableRow(cartItem) {
 
     nameTd.textContent = plant.name;
     qualTd.textContent = quantity; 
-    priceTd.textContent = `$${quantity * plant.price}`;
+    priceTd.textContent = `$${calcItemTotal(quantity, plant.price)}`;
      
     tr.append(nameTd);
     tr.append(qualTd);
