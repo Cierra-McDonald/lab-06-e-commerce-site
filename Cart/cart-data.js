@@ -9,13 +9,16 @@ export const userCart = [
     {
         id: 2, 
         quantity: '1',
-    }, {
+    }, 
+    {
         id: 3,
         quantity: '4', 
-    }, {
+    }, 
+    {
         id: 4,
         quantity: '1',
-    }, {
+    }, 
+    {
         id: 5,
         quantity: '5',
     },
