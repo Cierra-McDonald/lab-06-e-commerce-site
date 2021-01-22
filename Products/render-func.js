@@ -1,4 +1,4 @@
-import { getCart, setCart, addItemToCart, clearCart } from "../Cart/utils.js";
+import { getCart, setCart, addToCart, clearCart } from '../Cart/utils.js';
 
 // creating the DOM element in JS based on the hard code created in html
 export function renderPlants(plant) {
@@ -43,6 +43,9 @@ export function renderPlants(plant) {
     
     addButton.addEventListener('click', () => {
         console.log('hello');
+
+        addToCart(plant.id);
+        
         let locStorage = JSON.parse(localStorage.getItem('cartData'));
         console.log(locStorage);
         
