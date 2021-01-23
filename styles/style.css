@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #9CC69B;
 }
 
 main {
@@ -48,7 +48,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: #BDE4A8;
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -64,10 +64,20 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+
+}
+.jardin {
+    border-top : solid white;
+    border-bottom: solid white;
+    width: 300px;
+    height: 300px;
+    font-size: 64px;
+    float: right;
 }
 
 .gutter-right {
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .main-logo {
@@ -126,7 +136,7 @@ ul {
 
   .plants {
       background-color: rgb(235, 229, 217);
-      border: solid 1px black;
+      
 
   }
   .add-to-cart {

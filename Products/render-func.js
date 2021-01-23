@@ -1,4 +1,4 @@
-import { getCart, setCart, addToCart, clearCart } from '../Cart/utils.js';
+import { addToCart } from '../Cart/utils.js';
 
 // creating the DOM element in JS based on the hard code created in html
 export function renderPlants(plant) {
@@ -11,6 +11,7 @@ export function renderPlants(plant) {
     const pSize = document.createElement('p');
     const pLight = document.createElement('p');
     const pPrice = document.createElement('p');
+    // const qBox = document.createElement('div');
     const addButton = document.createElement('button');
 
 //  creating the actual data that will be looped onto the webpage
@@ -39,21 +40,17 @@ export function renderPlants(plant) {
     pPrice.textContent = '$' + plant.price; 
     li.append(pPrice);
 
+    // qBox.classList.add('secretBox');
+    // qBox.textContent = plant.quantity;
+    // li.append(qBox);
+
     addButton.classList.add('add-to-cart');
     
     addButton.addEventListener('click', () => {
-        console.log('hello');
 
         addToCart(plant.id);
-        
-        let locStorage = JSON.parse(localStorage.getItem('cartData'));
-        console.log(locStorage);
-        
-        // let locStorage = getCart();
-        // if (locStorage.length > 0){
-        //     console.log();
-        // }
     });
+
     addButton.textContent = 'Add to cart';
     li.append(addButton);
 

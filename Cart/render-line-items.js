@@ -10,6 +10,7 @@ export function renderTableRow(cartItem) {
     const nameTd = document.createElement('td');
     const qualTd = document.createElement('td');
     const priceTd = document.createElement('td');
+    // const orderButton = document.getElementsByClassName('check-out-button');
 
 
     nameTd.textContent = plant.name;
@@ -19,6 +20,11 @@ export function renderTableRow(cartItem) {
     tr.append(nameTd);
     tr.append(qualTd);
     tr.append(priceTd);
+
+    // orderButton.addEventListener('click', () => {
+    //     console.log('heloo');
+    // });
+
 
     return tr;
 }
