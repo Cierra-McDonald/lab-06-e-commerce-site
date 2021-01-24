@@ -32,7 +32,7 @@ export const plants = [
     {
         id: 4, 
         image: 'peace-lily.png',
-        genus: 'Spathiphyllum',
+        genus:  'Spathiphyllum',
         size: 'Large',
         light: 'High Light',
         price: '30',

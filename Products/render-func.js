@@ -1,3 +1,5 @@
+import { addToCart, getQuantity } from '../Cart/utils.js';
+
 // creating the DOM element in JS based on the hard code created in html
 export function renderPlants(plant) {
     const li = document.createElement('li');
@@ -9,6 +11,7 @@ export function renderPlants(plant) {
     const pSize = document.createElement('p');
     const pLight = document.createElement('p');
     const pPrice = document.createElement('p');
+    const qBox = document.createElement('p');
     const addButton = document.createElement('button');
 
 //  creating the actual data that will be looped onto the webpage
@@ -22,22 +25,34 @@ export function renderPlants(plant) {
     li.append(img);
 
     pGenus.classList.add('plant-genus');
-    pGenus.textContent = plant.genus;
+    pGenus.textContent = `Genus: ${plant.genus}`;
     li.append(pGenus); 
 
     pSize.classList.add('plant-size');
-    pSize.textContent = plant.size; 
+    pSize.textContent = `Plant Size: ${plant.size}`; 
     li.append(pSize);
 
     pLight.classList.add('light-needs');
-    pLight.textContent = plant.light; 
+    pLight.textContent = `Lighting: ${plant.light}`; 
     li.append(pLight);
 
     pPrice.classList.add('plant-price');
-    pPrice.textContent = '$' + plant.price; 
+    pPrice.textContent = `Price: ${'$'}${plant.price}`; 
     li.append(pPrice);
 
+    qBox.classList.add('secretBox');
+    qBox.textContent = `Quantity:`;
+    li.append(qBox);
+
     addButton.classList.add('add-to-cart');
+    
+    addButton.addEventListener('click', () => {
+
+        addToCart(plant.id);
+        qBox.textContent = `Quantity: ${getQuantity(plant.id)}`; 
+
+    });
+
     addButton.textContent = 'Add to cart';
     li.append(addButton);
 

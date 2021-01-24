@@ -15,10 +15,10 @@ test('should take in a plant and return a li', (expect) => {
     `<li class="plants">\
 <h3 class="plant-name">Silver Evergreen</h3>\
 <img class="plant-image" src="../assets/silver-evergreen.png">\
-<p class="plant-genus">Aglaonema</p>\
-<p class="plant-size">Medium</p>\
-<p class="light-needs">Low Light</p>\
-<p class="plant-price">$60</p>\
+<p class="plant-genus">Genus: Aglaonema</p>\
+<p class="plant-size">Plant Size: Medium</p>\
+<p class="light-needs">Lighting: Low Light</p>\
+<p class="plant-price">Price: $60</p><p class="secretBox">Quantity:</p>\
 <button class="add-to-cart">Add to cart</button>\
 </li>`;
 
