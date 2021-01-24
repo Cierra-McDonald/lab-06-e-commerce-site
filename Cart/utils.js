@@ -92,3 +92,13 @@ export function clearCart() {
 
     localStorage.setItem(CART, stringyDefaultCart);
 }
+export function getQuantity(id) {
+    
+    const cart = getCart();
+    const plant = findById(id, cart);
+    if (plant) { //this means that user already has plant in their cart
+        return plant.quantity;
+    } else {
+        return 'error';
+    }
+}
