@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #9CC69B;
 }
 
 main {
@@ -48,7 +48,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: #BDE4A8;
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -64,10 +64,20 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+
+}
+.jardin {
+    border-top : solid white;
+    border-bottom: solid white;
+    width: 300px;
+    height: 300px;
+    font-size: 64px;
+    float: right;
 }
 
 .gutter-right {
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .main-logo {
@@ -115,5 +125,27 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
+  }
+ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;  
+    }
 
+  .plants {
+      background-color: rgb(235, 229, 217);
+      
+
+  }
+  .add-to-cart {
+      color: limegreen;
+  }
+  .plant-image {
+      width: 200px;
+      height: 200px;
+  }
+  .plant-genus {
+      font-style: italic;
   }
